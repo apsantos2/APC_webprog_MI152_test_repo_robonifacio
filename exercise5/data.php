@@ -1,15 +1,6 @@
 <html>
 <head>
 <title>My Home Page</title>
-<style>
-a {
- text-decoration: none;
-}
-
-a:hover {
- opacity: 0.7;	
-}
-</style>
 </head>
 <body style="background: url(bg.png); background-repeat:no-repeat; background-position:top center; background-size:100%; margin:0; padding:0;">
 
