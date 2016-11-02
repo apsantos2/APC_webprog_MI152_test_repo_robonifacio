@@ -220,25 +220,5 @@ function test_input($data) {
   <input type="submit" name="submit" value="Submit">  
   </div>
 </form>
-<div class="result">
-<?php
-echo "<h2>Results:</h2>";
-echo $name;
-echo "<br>";
-echo $nick;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $home;
-echo "<br>";
-echo $gender;
-echo "<br>";
-echo $num;
-echo "<br>";
-echo $comment;
-echo "<br>";
-
-?>
-</div>
 </body>
 </html>
