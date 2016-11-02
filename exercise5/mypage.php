@@ -125,7 +125,7 @@ function hideNonVisibleDivs() {
 <div id="phpform">
 <h2>Fill Up the form</h2>
 <p><span class="error">* required field.</span></p>
-<form method="post" >  
+<form method="post" action="data.php">  
   <label for="FullName">Complete Name:</label>
 	<input type="text" name="name" id="FullName">
 	<br><br>
