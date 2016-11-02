@@ -154,7 +154,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-header("refresh:2; url=mypage.php");
 ?>
 
 <h2>Fill Up the form</h2>
