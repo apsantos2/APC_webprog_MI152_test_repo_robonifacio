@@ -126,7 +126,8 @@ function hideNonVisibleDivs() {
 <h2>Fill Up the form</h2>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="data.php">  
-  <label for="FullName">Complete Name:</label>
+
+	<label for="FullName">Complete Name:</label>
 	<input type="text" name="name" id="FullName">
 	<br><br>
 	
@@ -158,6 +159,8 @@ function hideNonVisibleDivs() {
 	<br><br>
 	<input type="submit" name="submit" value="Submit">  
 	</div>
+	
 </form>
+
 </body>
 </html>
