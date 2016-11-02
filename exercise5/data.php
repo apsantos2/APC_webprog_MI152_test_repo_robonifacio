@@ -20,7 +20,7 @@ if ($conn->connect_error) {
   
 
 
-$sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', $num, '$comment')";
+$sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', '$num', '$comment')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
