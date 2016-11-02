@@ -17,8 +17,14 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-  
 
+  $name = $_POST['name'];
+  $nick = $_POST['nick'];
+  $email = $_POST['email'];
+  $home = $_POST['home'];
+  $gender = $_POST["gender"];
+  $num = $_POST['num'];
+  $comment = $_POST['comment'];
 
 $sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', '$num', '$comment')";
 
