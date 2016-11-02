@@ -123,54 +123,41 @@ function hideNonVisibleDivs() {
 </div>
 
 <div id="phpform">
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "parpar21";
-$dbname = "guestform";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-$sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', $num, '$comment')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully <br> You will be redirected to main page in few seconds";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-?>
-
 <h2>Fill Up the form</h2>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Complete Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  Nickname: <input type="text" name="nick" value="<?php echo $nick;?>">
-  <span class="error">* <?php echo $nickErr;?></span>
-  <br><br>
-  Email Address: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error"><?php echo $emailErr;?></span>
-  <br><br>
-  Home Address: <input type="text" name="home" value="<?php echo $home;?>">
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  Cellphone Number: <input type="number" name="num" value="<?php echo $num;?>">
-  <div class="comment">Comment: <br><textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-  </div>
+  <label for="FullName">Complete Name:</label>
+	<input type="text" name="name" id="FullName">
+	<br><br>
+	
+	<label for="NickName">Nickname:</label>
+	<input type="text" name="nick" id="NickName">
+	<br><br>
+	
+	<label for="Email">Email Address:</label>
+	<input type="text" name="email" id="Email">
+	<br><br>
+	
+	<label for="HomeAddress">Home Address:</label>
+	<input type="text" name="home" id="HomeAddress">
+	<br><br>
+	
+	<label for="gender">Gender :</label>
+	<input type="radio" name="gender" value="female">Female
+	<input type="radio" name="gender" value="male">Male
+	<br><br>
+	
+	<label for="cellphone">Cellphone Number:</label>
+	<input type="number" name="num" id="cellphone">
+	<br><br>
+	
+	<div class="comment">
+	<label for="Comment">Comment:</label>
+	<br><br>
+	<textarea name="comment" rows="5" cols="40"></textarea>
+	<br><br>
+	<input type="submit" name="submit" value="Submit">  
+	</div>
 </form>
 </body>
 </html>
