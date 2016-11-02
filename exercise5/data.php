@@ -15,9 +15,6 @@ a:hover {
 <div class="lol" style="margin-top: 60px; margin-left: 580px;">
 <a href="trivia.php" style="color: white;">CLICK ME FOR TRIVIA</a>
 </div>
-<div class="lol2" style="margin-left: 578px;">
-<a href="mypage.php" style="color: white;">CLICK ME TO GO BACK</a>
-</div>
 
 <div id="succesfully" style="margin-left: 50px; margin-top: 140px; color: white;">
 <?php
