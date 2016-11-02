@@ -12,9 +12,6 @@ a:hover {
 </style>
 </head>
 <body style="background: url(bg.png); background-repeat:no-repeat; background-position:top center; background-size:100%; margin:0; padding:0;">
-<div class="lol" style="margin-top: 60px; margin-left: 580px;">
-<a href="trivia.php" style="color: white;">CLICK ME FOR TRIVIA</a>
-</div>
 
 <div id="succesfully" style="margin-left: 50px; margin-top: 140px; color: white;">
 <?php
