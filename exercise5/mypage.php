@@ -123,6 +123,39 @@ function hideNonVisibleDivs() {
 </div>
 
 <div id="phpform">
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "parpar21";
+$dbname = "guestform";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+  
+  $name = $_POST['name'];
+  $nick = $_POST['nick'];
+  $email = $_POST['email'];
+  $home = $_POST['home'];
+  $gender = $_POST["gender"];
+  $num = $_POST['num'];
+  $comment = $_POST['comment'];
+
+$sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', $num, '$comment')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";<br>
+	echo "You will be redirected to main page in few seconds";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+header("refresh:2; url=mypage.php");
+?>
 <?php	
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $nickErr = "";
