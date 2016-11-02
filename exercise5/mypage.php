@@ -139,7 +139,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', $num, '$comment')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";<br>
+    echo "New record created successfully";
 	echo "You will be redirected to main page in few seconds";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
