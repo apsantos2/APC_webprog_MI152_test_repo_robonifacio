@@ -18,20 +18,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
   
-  $name = $_POST['name'];
-  $nick = $_POST['nick'];
-  $email = $_POST['email'];
-  $home = $_POST['home'];
-  $gender = $_POST["gender"];
-  $num = $_POST['num'];
-  $comment = $_POST['comment'];
+
 
 $sql = "INSERT INTO guestform VALUES ('$name', '$nick', '$email', '$home', '$gender', $num, '$comment')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
-	echo " ";
-	echo "You will be redirected to main page in few seconds";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
