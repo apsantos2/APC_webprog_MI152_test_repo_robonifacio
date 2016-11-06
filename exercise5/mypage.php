@@ -77,7 +77,8 @@ function hideNonVisibleDivs() {
 </head>
 <body style="background: url(bg.png); background-repeat:no-repeat; background-position:top center; background-size:100%; margin:0; padding:0;">
 <div class="lol" style="margin-top: 60px; margin-left: 580px;">
-<a href="trivia.php" style="color: white;">CLICK ME FOR TRIVIA</a>
+<a href="trivia.php" style="color: white;">CLICK ME FOR TRIVIA</a><br>
+<a href="index.php" style="margin-left: -10px;color: white;">CLICK ME FOR DATABASE</a>
 </div>
 
 <button type="button" onClick="toggleVisibility('tabs');return false;" style="margin-top: 40px;margin-left: 565px;">Tables</button>
