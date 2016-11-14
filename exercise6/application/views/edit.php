@@ -48,7 +48,7 @@ extract($guestform);
     <td>
 	<input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
     <button type="submit" name="sbumit" value="Update" /><strong>UPDATE</strong></button>
-    <button type="submit" name="btn-cancel"><strong>Cancel</strong></button>
+	<a href="<?php echo base_url();?>index.php/users/database_view"><strong>Cancel</strong></a>
     </td>
     </tr>
     </table>
