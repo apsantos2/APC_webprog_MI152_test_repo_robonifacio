@@ -16,7 +16,7 @@ public function get_all_users()
 
 {
 
-$query = $this->db->get("");
+$query = $this->db->get("guestform");
 
 return $query->result();
 
