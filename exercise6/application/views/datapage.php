@@ -39,7 +39,7 @@ window.location="<?php echo base_url();?>index.php/users/"+act+"/"+gotoid;
 
 <body>
 <div id="goto" style="margin-top: 50px;text-align: center;">
-<h2><a href="<?php echo base_url();?>index.php" style="color: white;">Go to Main Page</a></h2>
+<h2><a href="<?php echo base_url();?>index.php" style="color: white;">go to Main Page</a></h2>
 </div>
 <div id="body">
 	<div id="content">
