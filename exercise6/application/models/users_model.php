@@ -26,7 +26,7 @@ public function insert_users_to_db($data)
 
 {
 
-return $this->db->insert('', $data);
+return $this->db->insert('guestform', $data);
 
 }
 
