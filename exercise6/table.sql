@@ -8,6 +8,6 @@ CREATE TABLE guestform(
     `Home_Address` varchar(255),
     `gender` varchar(6),
     `cellphone` varchar(11),
-    `comment` varchar(250)
+    `comment` varchar(500)
     );
     
