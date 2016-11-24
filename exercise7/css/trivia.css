@@ -1,0 +1,10 @@
+body {
+	background-image: url(images/bg.png);
+	background-repeat:no-repeat; 
+	background-position:top center; 
+	background-size:100%; 
+	margin:0; 
+	padding:0;
+}
+
+
