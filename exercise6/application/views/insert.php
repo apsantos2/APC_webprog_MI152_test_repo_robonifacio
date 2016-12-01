@@ -15,7 +15,7 @@
 
 	<form method="post" action="<?php echo base_url();?>index.php/users/insert_users_db">
 	
-<div id="body">
+<div id="body" style="margin-top: 220px;">
  <div id="content">
 <table align="center">
     <tr>
