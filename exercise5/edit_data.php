@@ -3,8 +3,8 @@ include_once 'dbconfig.php';
 if(isset($_GET['edit_id']))
 {
  $sql_query="SELECT * FROM guestform WHERE user_id=".$_GET['edit_id'];
- $result_set=mysql_query($sql_query);
- $fetched_row=mysql_fetch_array($result_set);
+ $result_set=mysqli_query($con, $sql_query);
+ $fetched_row=mysqli_fetch_array($result_set);
 }
 if(isset($_POST['btn-update']))
 {
@@ -31,12 +31,12 @@ if(isset($_POST['btn-update']))
  // sql query for update data into database
  
  // sql query execution function
- if(mysql_query($sql_query))
+ if(mysqli_query($con, $sql_query))
  {
   ?>
   <script type="text/javascript">
   alert('Data Are Updated Successfully');
-  window.location.href='index.php';
+  window.location.href='database.php';
   </script>
   <?php
  }
@@ -52,7 +52,7 @@ if(isset($_POST['btn-update']))
 }
 if(isset($_POST['btn-cancel']))
 {
- header("Location: index.php");
+ header("Location: database.php");
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -17,10 +17,25 @@ if(isset($_POST['btn-save']))
  
         $sql_query = "INSERT INTO guestform(complete_name,nickname,Email_Address,Home_Address,gender,cellphone,comment) 
 		VALUES('$complete_name','$nickname','$Email_Address','$Home_Address','$gender','$cellphone','$comment')";
- mysql_query($sql_query);
-        
-        // sql query for inserting data into database
- 
+ // sql query execution function
+ if(mysqli_query($con, $sql_query))
+ {
+  ?>
+  <script type="text/javascript">
+  alert('Data Are Inserted Successfully ');
+  window.location.href='database.php';
+  </script>
+  <?php
+ }
+ else
+ {
+  ?>
+  <script type="text/javascript">
+  alert('error occured while inserting your data');
+  </script>
+  <?php
+ }
+ // sql query execution function
 }
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -46,7 +61,7 @@ if(isset($_POST['btn-save']))
     <form method="post">
     <table align="center">
     <tr>
-    <td align="center"><a href="index.php">back to main page</a></td>
+    <td align="center"><a href="database.php">back to main page</a></td>
     </tr>
     <tr>
     <td><input type="text" name="complete_name" placeholder="Complete Name" required /></td>

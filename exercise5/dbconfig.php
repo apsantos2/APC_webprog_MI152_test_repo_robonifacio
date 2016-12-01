@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "parpar21";
+$password = "";
 $datbase = "guestform";
-$con = mysql_connect($host,$user,$password);
-mysql_select_db($datbase);
+$con = mysqli_connect($host,$user,$password);
+mysqli_select_db($con, $datbase);
 ?>
