@@ -17,17 +17,8 @@ body {
 	background-position: center center;
 	z-index: 2;
 }
-#tabs {
-	display: none;
-}
-
-th {
-	text-align:center;
-	padding-top: 4px;
-}
-
-#trivia {
-	display: none;
+#demo-canvas{
+	margin-top: -50px;
 }
 .box
 {
@@ -49,7 +40,6 @@ th {
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
-
 
 .main-title {
 	width: 100%;
