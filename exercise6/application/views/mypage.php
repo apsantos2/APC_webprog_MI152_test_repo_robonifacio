@@ -77,7 +77,7 @@ function hideNonVisibleDivs() {
 </script>
 </head>
 <body>
-<div class="lol" style="margin-top: 60px; margin-left: 580px;">
+<div class="lol" style="margin-top: 30px; margin-left: 580px;">
 <a href="<?php echo base_url(); ?>index.php/users/trivia" style="color: white;">CLICK ME FOR TRIVIA</a><br>
 <a href="<?php echo base_url(); ?>index.php/users/database_view" style="margin-left: -10px;color: white;">CLICK ME FOR DATABASE</a>
 </div>

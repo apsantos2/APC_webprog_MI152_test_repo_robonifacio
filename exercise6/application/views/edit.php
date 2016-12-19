@@ -17,7 +17,7 @@
 <?php
 extract($guestform);
 ?>
-<div id="body">
+<div id="body" style="margin-top: 220px;">
  <div id="content">
 <table align="center">
     <tr>

@@ -1,46 +1,7 @@
-<?php
-include_once 'dbconfig.php';
-
-// delete condition
-if(isset($_GET['delete_id']))
-{
- $sql_query="DELETE FROM guestform WHERE user_id=".$_GET['delete_id'];
- mysql_query($sql_query);
- header("Location: $_SERVER[PHP_SELF]");
-}
-// delete condition
-?>
-
-<html >
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>My Form</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script type="text/javascript">
-function edt_id(id)
-{
- if(confirm('Sure to edit ?'))
- {
-  window.location.href='edit_data.php?edit_id='+id;
- }
-}
-function delete_id(id)
-{
- if(confirm('Sure to Delete ?'))
- {
-  window.location.href='index.php?delete_id='+id;
- }
-}
-</script>
-
+<title>My Home Page</title>
 <style>
-#body {
-	width: 100%;
-	height: 415px;
-	margin-left: 0px;
-	margin-top: 252px;
-	overflow: auto;	margin-top: 140px;
-}
 a {
  text-decoration: none;
 }
@@ -86,54 +47,121 @@ button:hover {
  border-color: grey;
 }
 
-
-
 </style>
+<script>
+var divs = ["tabs","phpform"];
+var visibleDivId = null;
+
+function toggleVisibility(divId) {
+    if (visibleDivId === divId) {
+        visibleDivId = null;
+    } else {
+        visibleDivId = divId;
+    }
+    hideNonVisibleDivs();
+}
+
+function hideNonVisibleDivs() {
+    var i, divId, div;
+    for (i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if (visibleDivId === divId) {
+            div.style.display = "block";
+        } else {
+            div.style.display = "none";
+        }
+    }
+}
+</script>
 </head>
 <body style="background: url(bg.png); background-repeat:no-repeat; background-position:top center; background-size:100%; margin:0; padding:0;">
-<center>
-<div id="goto" style="margin-top: 50px;">
-<h2><a href="mypage.php" style="color: white;">Go to Main Page</a></h2>
-</div>
-<div id="body">
- <div id="content">
-    <table align="center">
-    <tr>
-    <th colspan="9"><a href="add_data.php">Add Data Now</a></th>
-    </tr>
-    <th>Complete Name</th>
-    <th>Nickname</th>
-    <th>Email Address</th>
-	<th>Home Address</th>
-	<th>Gender</th>
-	<th>Cellphone Number</th>
-	<th>Comment</th>
-    <th colspan="2">Operations</th>
-    </tr>
-    <?php
- $sql_query="SELECT * FROM guestform";
- $result_set=mysql_query($sql_query);
- while($row=mysql_fetch_row($result_set))
- {
-  ?>
-        <tr>
-        <td><?php echo $row[1]; ?></td>
-        <td><?php echo $row[2]; ?></td>
-        <td><?php echo $row[3]; ?></td>
-		<td><?php echo $row[4]; ?></td>
-		<td><?php echo $row[5]; ?></td>
-		<td><?php echo $row[6]; ?></td>
-		<td><?php echo $row[7]; ?></td>
-  <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
-        <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="b_drop.png" align="DELETE" /></a></td>
-        </tr>
-        <?php
- }
- ?>
-    </table>
-    </div>
+<div class="lol" style="margin-top: 40px; margin-left: 580px;">
+<a href="trivia.php" style="color: white;">CLICK ME FOR TRIVIA</a><br>
+<a href="database.php" style="margin-left: -10px;color: white;">CLICK ME FOR DATABASE</a>
 </div>
 
-</center>
+<button type="button" onClick="toggleVisibility('tabs');return false;" style="margin-top: 40px;margin-left: 565px;">Tables</button>
+<button type="button" onClick="toggleVisibility('phpform');return false;" style="margin-left: 100px;">Form</button>
+
+<div id="tabs">
+<table style="width:94.5%; margin-left: 38px; margin-top: 140px; border: 1px solid black; border-collapse: collapse;">
+  <tr style="border: 1px solid black; border-collapse: collapse;">
+    <th style="background-color: grey; color : white; border: 1px solid white; border-collapse: collapse;">Full Name</th>
+    <th style="background-color: grey; color : white; border: 1px solid white; border-collapse: collapse;">Nick Name</th>
+    <th style="background-color: grey; color : white; border: 1px solid white; border-collapse: collapse;">Interests</th>
+    <th style="background-color: grey; color : white; border: 1px solid white; border-collapse: collapse;">Hobbies</th>
+    <th style="background-color: grey; color : white; border: 1px solid white; border-collapse: collapse;">Favorite Websites</th>
+  </tr>
+  <tr>
+      <td style="border: 1px solid white; text-align: center; border-collapse: collapse; height: 342px;"><img src="itsme.jpg" WIDTH="200" HEIGHT="200"></td>
+      <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">Par</td>
+      <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">
+      <img src="bball.jpg" WIDTH="190" HEIGHT="170"><br>
+      <img src="vball.jpg" WIDTH="190" HEIGHT="170">
+      </td>
+      <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">
+      <img src="books.jpg" WIDTH="190" HEIGHT="170"><br>
+      <img src="cooking.jpg" WIDTH="190" HEIGHT="170">
+      </td>
+      <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">
+      <a href="http://www.w3schools.com/" style="color: white;">W3SCHOOLS</a><br>
+      <a href="http://rathena.org/" style="color: white;">RATHENA</a><br>
+      <a href="http://herc.ws/" style="color: white;">HERCULES</a>
+          
+      </td>
+  </tr>
+    
+  <tr>
+    <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">Ralph Noel O. Bonifacio</td>
+    <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;"></td>
+    <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">Basketball and Volleyball</td>
+    <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">Reading and Cooking</td>
+    <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;"></td>
+  </tr>
+
+</table>
+</div>
+
+<div id="phpform">
+<h2>Fill Up the form</h2>
+<p><span class="error">* required field.</span></p>
+<form method="post" action="data.php">  
+
+	<label for="FullName">Complete Name:</label>
+	<input type="text" name="name" id="FullName">
+	<br><br>
+	
+	<label for="NickName">Nickname:</label>
+	<input type="text" name="nick" id="NickName">
+	<br><br>
+	
+	<label for="Email">Email Address:</label>
+	<input type="text" name="email" id="Email">
+	<br><br>
+	
+	<label for="HomeAddress">Home Address:</label>
+	<input type="text" name="home" id="HomeAddress">
+	<br><br>
+	
+	<label for="gender">Gender :</label>
+	<input type="radio" name="gender" value="female">Female
+	<input type="radio" name="gender" value="male">Male
+	<br><br>
+	
+	<label for="cellphone">Cellphone Number:</label>
+	<input type="number" name="num" id="cellphone">
+	<br><br>
+	
+	<div class="comment">
+	<label for="Comment">Comment:</label>
+	<br><br>
+	<textarea name="comment" rows="5" cols="40"></textarea>
+	<br><br>
+	<input type="submit" name="submit" value="Submit">  
+	</div>
+	
+</form>
+
 </body>
 </html>
