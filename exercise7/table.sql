@@ -1,3 +1,5 @@
+	CREATE DATABASE guestform;
+
 	/*
 	* Important so that we can add users
 	*
