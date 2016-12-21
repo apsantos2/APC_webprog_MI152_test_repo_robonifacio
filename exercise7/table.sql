@@ -1,3 +1,7 @@
+	/*
+	* Important so that we can add users
+	*
+	*/
 CREATE TABLE guestform(
 	`user_id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
     `complete_name` varchar(255),
