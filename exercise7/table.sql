@@ -8,6 +8,11 @@ CREATE TABLE guestform(
     `cellphone` varchar(11),
     `comment` varchar(500)
     );
+	
+	/*
+	* Important
+	*
+	*/
 
 CREATE TABLE trivia(
 	`ID` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
