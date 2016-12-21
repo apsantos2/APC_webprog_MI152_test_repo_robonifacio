@@ -116,6 +116,14 @@ h1 {
 	color: red;
 }
 
+.trivia-view {
+	color: black;
+}
+
+.trivia-view table {
+	background-color: grey;
+}
+
 .box
 {
     width: auto;
@@ -185,6 +193,18 @@ h1 {
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 	color: white;
+}
+
+.triviav-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
 }
 
 .update-title {
