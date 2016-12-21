@@ -15,6 +15,12 @@ CREATE TABLE trivia(
     `ANSWER` varchar(500)
     );
 	
+	}
+	
+	/*
+	* To make the website work properly
+	*
+	*/
 CREATE TABLE trivias(
 	`ID` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
     `QUESTION` varchar(500),
