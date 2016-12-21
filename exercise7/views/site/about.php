@@ -13,7 +13,8 @@ $this->params['breadcrumbs'][] = $this->title;
 			<div class="points">
 				<canvas id="demo-canvas"></canvas>
 			</div>
-				<div class="main-title">
+				<div class="about-title">
+				<div class="box">
 					<h1><?= Html::encode($this->title) ?></h1>
 
 						<p>
@@ -21,6 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 						</p>
 
 					<code><?= __FILE__ ?></code>
+				</div>
 				</div>
 </div>
 
