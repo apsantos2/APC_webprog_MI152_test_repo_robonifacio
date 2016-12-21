@@ -29,6 +29,7 @@ th {
 #trivia {
 	display: none;
 }
+
 .box
 {
     width: auto;
@@ -49,7 +50,6 @@ th {
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
-
 
 .main-title {
 	width: 100%;

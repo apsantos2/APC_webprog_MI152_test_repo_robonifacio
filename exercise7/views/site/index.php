@@ -54,15 +54,15 @@ function hideNonVisibleDivs() {
     <th style="background-color: grey; color : white; border: 1px solid white; border-collapse: collapse;">Favorite Websites</th>
   </tr>
   <tr>
-      <td style="border: 1px solid white; text-align: center; border-collapse: collapse; height: 342px;"><img src="http://127.0.0.1/basic/web/img/itsme.jpg" WIDTH="200" HEIGHT="200"></td>
+      <td style="border: 1px solid white; text-align: center; border-collapse: collapse; height: 342px;"><img src="http://127.0.0.1/exercise7/web/img/itsme.jpg" WIDTH="200" HEIGHT="200"></td>
       <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">Par</td>
       <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">
-      <img src="http://127.0.0.1/basic/web/img/bball.jpg" WIDTH="190" HEIGHT="170"><br>
-      <img src="http://127.0.0.1/basic/web/img/vball.jpg" WIDTH="190" HEIGHT="170">
+      <img src="http://127.0.0.1/exercise7/web/img/bball.jpg" WIDTH="190" HEIGHT="170"><br>
+      <img src="http://127.0.0.1/exercise7/web/img/vball.jpg" WIDTH="190" HEIGHT="170">
       </td>
       <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">
-      <img src="http://127.0.0.1/basic/web/img/books.jpg" WIDTH="190" HEIGHT="170"><br>
-      <img src="http://127.0.0.1/basic/web/img/cooking.jpg" WIDTH="190" HEIGHT="170">
+      <img src="http://127.0.0.1/exercise7/web/img/books.jpg" WIDTH="190" HEIGHT="170"><br>
+      <img src="http://127.0.0.1/exercise7/web/img/cooking.jpg" WIDTH="190" HEIGHT="170">
       </td>
       <td style="color : white; border: 1px solid white; text-align: center; border-collapse: collapse;">
       <a href="http://www.w3schools.com/" style="color: white;">W3SCHOOLS</a><br>
