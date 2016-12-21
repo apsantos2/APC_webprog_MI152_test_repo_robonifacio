@@ -30,8 +30,16 @@ th {
 	display: none;
 }
 
+#guest {
+	display: none;
+}
+
 .img-circle {
     border-radius: 50%;
+}
+
+.img-circle:hover {
+	opacity: 0.7;
 }
 
 .box

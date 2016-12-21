@@ -10,6 +10,8 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Trivias;
 use yii\db\Expression;
+use app\models\Guestform;
+use yii\data\ActiveDataProvider;
 
 class SiteController extends Controller
 {
@@ -67,7 +69,12 @@ class SiteController extends Controller
 		->limit(5)
 		->all();
 		
+		$dataProvider = new ActiveDataProvider([
+            'query' => Guestform::find(),
+        ]);
+		
         return $this->render('index', [
+			'dataProvider' => $dataProvider,
 			'trivias' => $query,
         ]);
     }

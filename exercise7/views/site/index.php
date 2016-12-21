@@ -9,7 +9,7 @@ use yii\widgets\Pjax;
 $this->title = 'Home Page';
 ?>
 <script>
-var divs = ["tabs","trivia"];
+var divs = ["tabs","trivia","guest"];
 var visibleDivId = null;
 
 function toggleVisibility(divId) {
@@ -43,6 +43,7 @@ function hideNonVisibleDivs() {
 				<div class="main-title">
 				<button class="btn btn-lg btn-success" onClick="toggleVisibility('tabs');return false;">TABLES</button>
 				<button class="btn btn-lg btn-success" onClick="toggleVisibility('trivia');return false;">TRIVIA</button>
+				<button class="btn btn-lg btn-success" onClick="toggleVisibility('guest');return false;">USERS</button>
 					<div id="tabs">
 						<div class="box">
 <table style="width:100%; border: 1px solid black; border-collapse: collapse;">
@@ -105,6 +106,32 @@ function hideNonVisibleDivs() {
 					<p><a class="btn btn-lg btn-success" id="show">SHOW / HIDE</a></p>
 					</div>
 				</div>
+				
+				<div id="guest">
+					<div class="box">
+						<div class="guestform-index">
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'user_id',
+            'complete_name',
+            'nickname',
+            'Email_Address:email',
+            'Home_Address',
+            'gender',
+            'cellphone',
+            'comment',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
+</div>
+					</div>
+				</div>
+				
 				</div>
 			</div>
 </div>
