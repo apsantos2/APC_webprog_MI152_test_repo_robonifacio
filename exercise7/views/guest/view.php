@@ -17,6 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div>
 			<div class="view-title">
 <h1><?= Html::encode($this->title) ?></h1>
+<center><p><a href="http://127.0.0.1/exercise7/web/index.php?r=guest" class="btn btn-lg btn-success">GO BACK</a></p></center>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->user_id], ['class' => 'btn btn-primary']) ?>
