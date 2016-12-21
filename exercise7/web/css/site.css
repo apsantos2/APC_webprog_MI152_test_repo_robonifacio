@@ -30,6 +30,10 @@ th {
 	display: none;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 .box
 {
     width: auto;
