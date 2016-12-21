@@ -109,8 +109,16 @@ function hideNonVisibleDivs() {
 				
 				<div id="guest">
 					<div class="box">
+						<p>
+        <?php
+			if (Yii::$app->user->isGuest) {
+				
+			} elseif(Yii::$app->user->identity->username) {
+				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest" class="btn btn-lg btn-success">ADD DATA</a>';
+			}
+			?>
+    </p>
 						<div class="guestform-index">
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
@@ -124,8 +132,6 @@ function hideNonVisibleDivs() {
             'gender',
             'cellphone',
             'comment',
-
-            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 </div>

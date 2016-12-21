@@ -9,6 +9,10 @@ body {
 	padding:0;
 }
 
+.site-login {
+	color: white;
+}
+
 .large-header {
 	position: relative;
 	width: 100%;
@@ -16,6 +20,10 @@ body {
 	background-size: cover;
 	background-position: center center;
 	z-index: 2;
+}
+
+#demo-canvas {
+	margin-top: -100px;
 }
 #tabs {
 	display: none;
@@ -40,6 +48,56 @@ th {
 
 .img-circle:hover {
 	opacity: 0.7;
+}
+
+.guestform-index {
+	color: black;
+}
+
+.guestform-index a {
+	color: black;
+}
+
+.guestform-index a:hover {
+	color: red;
+}
+
+.guestform-index table {
+	background-color: grey;
+}
+
+.guestform-create {
+	color: white;
+}
+
+.guestform-view {
+	color: black;
+}
+
+.guestform-view a {
+	color: white;
+}
+
+.guestform-view a:hover {
+	color: red;
+}
+
+
+.guestform-view table {
+	background-color: grey;
+}
+
+h1 {
+	color: white;
+}
+
+
+.guestform-update {
+	color: white;
+}
+
+#guest table {
+	background-color: grey;
 }
 
 .box
@@ -71,6 +129,16 @@ th {
 	color: #f9f1e9;
 	text-align: center;
 	top: 50%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.login-title {
+	width: 100%;
+	position: absolute;
+	top: 20%;
 	left: 50%;
 	margin-left: 150px;
 	-webkit-transform: translate3d(-50%,-50%,0);

@@ -9,13 +9,13 @@ use yii\grid\GridView;
 $this->title = 'Guestforms';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="guestform-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+	<h1><?= Html::encode($this->title) ?></h1>
 
     <p>
         <?= Html::a('Create Guestform', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+<div class="guestform-index">
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
