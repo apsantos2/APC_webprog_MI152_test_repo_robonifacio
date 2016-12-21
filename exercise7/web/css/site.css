@@ -100,6 +100,22 @@ h1 {
 	background-color: grey;
 }
 
+.trivia-index {
+	color: black;
+}
+
+.trivia-index table {
+	background-color: grey;
+}
+
+.trivia-index a {
+	color: black;
+}
+
+.trivia-index a:hover {
+	color: red;
+}
+
 .box
 {
     width: auto;
@@ -135,6 +151,18 @@ h1 {
 	transform: translate3d(-50%,-50%,0);
 }
 .view-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 30%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.trivia-title {
 	width: 100%;
 	position: absolute;
 	margin: 0;

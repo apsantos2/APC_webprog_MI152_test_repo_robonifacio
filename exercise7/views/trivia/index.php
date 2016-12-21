@@ -9,6 +9,12 @@ use yii\grid\GridView;
 $this->title = 'Trivias';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<div id="large-header" class="large-header">
+    <canvas id="demo1-canvas"></canvas>
+			<div class="points">
+				<canvas id="demo-canvas"></canvas>
+			</div>
+			<div class="trivia-title">
 <div class="trivia-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -28,4 +34,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
+</div>
 </div>
