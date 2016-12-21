@@ -134,6 +134,54 @@ h1 {
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
+.view-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 25%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.update-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 40%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.upadate-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 25%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.create-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	top: 45%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
 
 .login-title {
 	width: 100%;
@@ -144,6 +192,28 @@ h1 {
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
+
+.contact-title {
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: 150px;
+	color: white;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.guest-title {
+	width: 100%;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
 .wrap {
     min-height: 100%;
     height: auto;

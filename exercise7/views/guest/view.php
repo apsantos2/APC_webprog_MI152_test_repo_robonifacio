@@ -10,6 +10,12 @@ $this->title = $model->user_id;
 $this->params['breadcrumbs'][] = ['label' => 'Guestforms', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<div id="large-header" class="large-header">
+    <canvas id="demo1-canvas"></canvas>
+			<div class="points">
+				<canvas id="demo-canvas"></canvas>
+			</div>
+			<div class="view-title">
 <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
@@ -39,4 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+		</div>
+	</div>
 </div>
