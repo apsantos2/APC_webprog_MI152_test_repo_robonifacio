@@ -165,8 +165,7 @@ h1 {
 	margin: 0;
 	padding: 0;
 	color: #f9f1e9;
-	text-align: center;
-	top: 15%;
+	top: 50%;
 	left: 50%;
 	margin-left: 150px;
 	-webkit-transform: translate3d(-50%,-50%,0);

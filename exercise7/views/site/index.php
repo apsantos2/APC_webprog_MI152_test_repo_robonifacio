@@ -95,8 +95,17 @@ function hideNonVisibleDivs() {
 						});
 						});
 					</script>
-
+<p>
+        <?php
+			if (Yii::$app->user->isGuest) {
+				
+			} elseif(Yii::$app->user->identity->username) {
+				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=trivia" class="btn btn-lg btn-success">ADD TRIVIA</a>';
+			}
+			?>
+    </p>
 					<h1>Trivias</h1>
+					
 					<?php foreach ($trivias as $trivia): ?>
 								<strong><?= Html::encode("{$trivia->question}") ?>:</strong>
 							<br></br>	
