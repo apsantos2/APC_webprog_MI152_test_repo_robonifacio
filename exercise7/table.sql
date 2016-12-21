@@ -14,4 +14,10 @@ CREATE TABLE trivia(
     `QUESTION` varchar(500),
     `ANSWER` varchar(500)
     );
+	
+CREATE TABLE trivias(
+	`ID` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    `QUESTION` varchar(500),
+    `ANSWER` varchar(500)
+    );
     
