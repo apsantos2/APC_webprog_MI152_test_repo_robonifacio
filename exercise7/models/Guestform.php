@@ -32,10 +32,12 @@ class Guestform extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['complete_name', 'Email_Address', 'Home_Address'], 'string', 'max' => 255],
+            [['complete_name', 'Email_Address', 'Home_Address'], 'string', 'max' => 255, ],
+			[['complete_name', 'Email_Address', 'Home_Address','nickname','gender','cellphone','comment'], 'required'],
             [['nickname'], 'string', 'max' => 45],
             [['gender'], 'string', 'max' => 6],
             [['cellphone'], 'string', 'max' => 11],
+			[['Email_Address'], 'email'],
             [['comment'], 'string', 'max' => 500],
         ];
     }

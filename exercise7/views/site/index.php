@@ -106,10 +106,10 @@ function hideNonVisibleDivs() {
     </p>
 					<h1>Trivias</h1>
 					
-					<?php foreach ($trivias as $trivia): ?>
-								<strong><?= Html::encode("{$trivia->question}") ?>:</strong>
+					<?php foreach ($trivia as $trivia): ?>
+								<strong><?= Html::encode("{$trivia->QUESTION}") ?>:</strong>
 							<br></br>	
-								<answers style=display:none><?= $trivia->answer ?></answers>
+								<answers style=display:none><?= $trivia->ANSWER ?></answers>
 							<br></br>		
 					<?php endforeach; ?>
 					<p><a class="btn btn-lg btn-success" id="show">SHOW / HIDE</a></p>
@@ -121,9 +121,10 @@ function hideNonVisibleDivs() {
 						<p>
         <?php
 			if (Yii::$app->user->isGuest) {
-				
+				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest%2Fcreate" class="btn btn-lg btn-success">ADD DATA</a>';
 			} elseif(Yii::$app->user->identity->username) {
-				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest" class="btn btn-lg btn-success">ADD DATA</a>';
+				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest%2Fcreate" class="btn btn-lg btn-success">ADD DATA</a>';
+				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest" class="btn btn-lg btn-success" style="margin-left: 10px;">EDIT DATA</a>';
 			}
 			?>
     </p>

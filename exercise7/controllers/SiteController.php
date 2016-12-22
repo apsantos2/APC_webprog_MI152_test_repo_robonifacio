@@ -8,7 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use app\models\Trivias;
+use app\models\Trivia;
 use yii\db\Expression;
 use app\models\Guestform;
 use yii\data\ActiveDataProvider;
@@ -64,7 +64,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-		$query = Trivias::find()
+		$query = Trivia::find()
 		->orderBy(new Expression('rand()'))
 		->limit(5)
 		->all();
@@ -75,7 +75,7 @@ class SiteController extends Controller
 		
         return $this->render('index', [
 			'dataProvider' => $dataProvider,
-			'trivias' => $query,
+			'trivia' => $query,
         ]);
     }
 

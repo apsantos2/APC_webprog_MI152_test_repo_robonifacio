@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			<div class="points">
 				<canvas id="demo-canvas"></canvas>
 			</div>
-			<div class="trivia-title">
+			<div class="trivia-title" style="margin-top: 30px;">
 <div class="trivia-index">
 
     <h1><?= Html::encode($this->title) ?></h1>

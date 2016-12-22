@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Home_Address')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'gender')->textInput(['maxlength' => true]) ?>
+     <?=$form->field($model, 'gender')->radioList(array('Male' => 'Male', 'Female' =>'Female'), array('class' => 'i-checks'));?>
 
     <?= $form->field($model, 'cellphone')->textInput(['maxlength' => true]) ?>
 
